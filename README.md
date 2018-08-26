@@ -7,7 +7,7 @@ For configurations, I prefer dotfiles.
 # Installation
 
 ```sh  
-sh -c "$(curl -sSL https://raw.githubusercontent.com/zhoumingjun/ubuntu-devenv-playbook/master/bootstrap.sh)"
+sh -c "$(curl -sSL https://raw.githubusercontent.com/zhoumingjun/darwin-ansible-playbooks/master/bootstrap.sh)"
 
 ```
 
