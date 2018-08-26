@@ -1,0 +1,67 @@
+--- 
+- name: Add Homebrew tap
+  homebrew_tap:
+    name: "{{ item }}"
+    state: present
+  with_items: 
+    - 'homebrew/cask-versions'
+
+- name: Updating Homebrew
+  homebrew:
+    update_homebrew: true
+ 
+- name: Installing Homebrew Packages
+  homebrew:
+    name: "{{ item }}"
+    state: "present"
+  with_items: 
+    - "aria2"
+ 
+    - "ffmpeg"
+    - "gdbm"
+    - "gettext"
+    - "git"
+    - "go"
+    - "gradle"
+    - "icu4c"
+    - "jenv"
+    - "jq"
+    - "lame"
+    - "libevent"
+    - "libidn2"
+    - "libunistring"
+    - "libyaml"
+    - "node"
+    - "oniguruma"
+    - "openapi-generator"
+    - "openssl"
+    - "pkg-config"
+    - "python"
+    - "readline"
+    - "sphinx-doc"
+    - "sqlite"
+    - "ssh-copy-id"
+    - "telnet"
+    - "tmux"
+    - "tree"
+    - "vault"
+    - "wget"
+    - "x264"
+    - "xvid"
+    - "xz"
+    - "zsh"      
+ 
+- name: Installing Homebrew Cask Packages
+  homebrew_cask:
+    name: "{{ item }}"
+    state: "present"
+  with_items: 
+    - "dukto"
+    - "filezilla"
+    - "iterm2"
+    - "keepassxc"
+    - "v2rayx"
+    - "virtualbox"
+    - "virtualbox-extension-pack"
+    - "vlc"
+ 

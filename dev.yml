@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  roles:
+    - role: common
+    - role: devtool
+    - role: ohmyzsh
+
+    
+
+
+ 
+ 
