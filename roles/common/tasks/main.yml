@@ -5,6 +5,7 @@
     state: present
   with_items: 
     - 'homebrew/cask-versions'
+    - 'homebrew/cask-fonts'
 
 - name: Updating Homebrew
   homebrew:
@@ -16,7 +17,6 @@
     state: "present"
   with_items: 
     - "aria2"
- 
     - "ffmpeg"
     - "gdbm"
     - "gettext"
@@ -64,4 +64,5 @@
     - "virtualbox"
     - "virtualbox-extension-pack"
     - "vlc"
+    - "homebrew/cask-fonts"
  
